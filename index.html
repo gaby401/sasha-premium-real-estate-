@@ -1,1 +1,88 @@
-404: Not Found
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Discover exclusive listings and personalised service with Sasha Premium Real Estate in Herzliya & Tel Aviv.">
+  <meta name="keywords" content="premium real estate, luxury homes, Herzliya, Tel Aviv, Israel">
+  <meta name="author" content="Sasha Premium Real Estate">
+  <title>Sasha Premium Real Estate – Premium Homes & Luxury Living</title>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <style>
+    :root { --brand:#D4AF37; --ink:#0A192F; --light-bg:#F6F7FA; --border:#EEE; }
+    body { font-family: system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Inter,Arial,sans-serif; margin:0; color:var(--ink); background:#FFF; line-height:1.5; }
+    .wrap { max-width:1100px; margin:auto; padding:24px; }
+    header { display:flex; align-items:center; gap:14px; padding:14px 0; border-bottom:1px solid var(--border); }
+    .brand { display:flex; align-items:center; gap:10px; text-decoration:none; color:inherit; }
+    .brand ion-icon { color:var(--brand); font-size:22px; }
+    .pill { display:inline-flex; align-items:center; gap:6px; padding:6px 10px; border-radius:999px; background:var(--light-bg); color:#333; font-size:13px; }
+    .hero { display:grid; gap:12px; padding:48px 0; }
+    .hero h1 { font-size:clamp(28px,3.5vw,44px); margin:0; font-weight:700; }
+    .hero p { max-width:720px; margin:0; color:#334155; }
+    .cta { display:flex; gap:12px; margin-top:16px; }
+    .btn { background:var(--brand); color:#111; padding:12px 18px; border-radius:10px; border:none; font-weight:600; text-decoration:none; cursor:pointer; transition:background .2s; }
+    .btn:hover { background:#B69530; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:16px; margin:20px 0 40px; }
+    .card { border:1px solid var(--border); border-radius:14px; padding:16px; box-shadow:0 1px 6px rgba(0,0,0,.04); background:#fff; transition:transform .2s; }
+    .card:hover { transform:translateY(-4px); }
+    .card h3 { margin:6px 0 4px; font-size:18px; font-weight:600; }
+    footer { padding:24px 0; border-top:1px solid var(--border); font-size:14px; color:#556; text-align:center; }
+    @media (max-width:600px){ .hero{padding:24px 0} .cta{flex-direction:column} }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <a href="/" class="brand">
+        <ion-icon name="home-outline"></ion-icon>
+        <strong>Sasha Premium Real Estate</strong>
+      </a>
+      <div style="margin-left:auto" class="pill">
+        <ion-icon name="call-outline"></ion-icon>
+        <a href="tel:+972540000000">+972-54-000-0000</a>
+      </div>
+    </header>
+
+    <section class="hero">
+      <h1>Premium Homes & Luxury Living in Herzliya and Tel Aviv</h1>
+      <p>Our team specialises in premium properties across Israel, connecting discerning buyers with exclusive homes and providing unparalleled market expertise and personalised guidance.</p>
+      <div class="cta">
+        <a class="btn" href="mailto:info@sasha-realestate.com">Contact Us</a>
+        <a class="btn" style="background:var(--ink); color:#fff" href="#listings">View Listings</a>
+      </div>
+    </section>
+
+    <section id="listings">
+      <h2 style="margin:0 0 10px">Featured Listings</h2>
+      <div class="grid">
+        <article class="card">
+          <div class="pill"><ion-icon name="pin-outline"></ion-icon> Herzliya Pituach</div>
+          <h3>Modern Seafront Villa</h3>
+          <p>5 bed · 480 m² · Pool · Sea view</p>
+        </article>
+        <article class="card">
+          <div class="pill"><ion-icon name="pin-outline"></ion-icon> Tel Aviv – Old North</div>
+          <h3>Penthouse with Rooftop</h3>
+          <p>4 bed · 210 m² · Balcony · Parking</p>
+        </article>
+        <article class="card">
+          <div class="pill"><ion-icon name="pin-outline"></ion-icon> Herzliya Marina</div>
+          <h3>Harbourfront Apartment</h3>
+          <p>3 bed · 140 m² · Marina view</p>
+        </article>
+      </div>
+    </section>
+
+    <footer>
+      © <span id="year"></span> Sasha Premium Real Estate · Herzliya, Tel Aviv, Israel ·
+      <a href="mailto:info@sasha-realestate.com">info@sasha-realestate.com</a>
+    </footer>
+  </div>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script src="./assets/js/script.js"></script>
+</body>
+</html>
