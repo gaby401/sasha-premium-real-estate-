@@ -1,0 +1,12 @@
+404: Not Found.service-card .card-icon {
+  background: var(--seashell);
+  color: var(--yellow-green);
+  width: 72px;
+  height: 72px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  font-size: 32px;
+  margin-inline: auto;
+  margin-bottom: 20px;
+}
